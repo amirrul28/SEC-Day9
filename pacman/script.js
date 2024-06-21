@@ -21,8 +21,8 @@ function moveRight() {
   pacman.style.transform = "rotate(0deg) scaleX(1)";
   const currentLeft = parseInt(pacman.style.left || 0);
   const newLeft = currentLeft + 70;
-  const maxWidth = gameField.scrollWidth;
-  const gameFieldWidth = maxWidth - 75;
+  const maxWidth = gameField.offsetWidth;
+  const gameFieldWidth = maxWidth - 77;
   console.log(newLeft);
   console.log(gameFieldWidth);
   if (newLeft < gameFieldWidth) {
